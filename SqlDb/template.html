@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Reset OTP</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .email-container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            border: 1px solid #dddddd;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .header {
+            background-color: #007BFF;
+            color: #ffffff;
+            text-align: center;
+            padding: 15px;
+        }
+        .content {
+            padding: 20px;
+        }
+        .content h1 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .otp-code {
+            font-size: 24px;
+            font-weight: bold;
+            color: #007BFF;
+            text-align: center;
+            margin: 20px 0;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="header">
+            <h1>Forgot Password Request</h1>
+        </div>
+        <div class="content">
+            <h1>Dear User,</h1>
+            <p>We received a Forgot password request form your account. Please use the OTP code below to reset your password:</p>
+            <div class="otp-code">{{.OTP}}</div>
+          
+        </div>
+    </div>
+</body>
+</html>

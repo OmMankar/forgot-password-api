@@ -1,0 +1,10 @@
+test/
+/SqlDb/.env
+/SqlDb/go.*
+/SqlDb/main
+/NoSqlDb/.env
+/NoSqlDb/go.*
+/NoSqlDb/main
+/NoSqlDb/user.json
+
+
